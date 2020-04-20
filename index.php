@@ -28,6 +28,23 @@
       }
     }
 
+echo "<h1> Writing a Math Function #6 </h1>";
+
+   $amount=800;
+   $taxRate=0.0825;
+   $addedTax= $amount*$taxRate;
+   echo "<p>".$addedTax."</p>";  
+
+echo "<h1>Tax calc function </h1>";
+
+function tax_calc($amount,$tax){
+  $calculate_tax = $amount*$tax;
+  $amount = round($amount+$calculate_tax, 2);
+  return $amount;
+}
+echo tax_calc(750, 0.223);
+
+
     ?>
   </body>
 </html>
